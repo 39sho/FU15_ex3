@@ -1,14 +1,16 @@
 const toss = () => Math.floor(Math.random() * 2);
 
-const toss_n = 3; // トス回数
+const tossNum = 3; // トス回数
 
 console.log("Tossing a coin...");
 
-let sum = 0;
-for (const i of Array(toss_n).keys()) {
+let tails = 0;
+for (const i of Array(tossNum).keys()) {
     const n = toss();
-    sum += n;
+    tails += n;
     console.log(`Round ${i + 1}: ${n === 0 ? "Heads" : "Tails"}`);
 }
 
-console.log(`Heads: ${toss_n - sum}, Tails: ${sum}`);
+const heads = tossNum - tails;
+console.log(`Heads: ${heads}, Tails: ${tails}`);
+console.log(heads > tails ? "You won!" : "You lost.");
