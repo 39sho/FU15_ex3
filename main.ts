@@ -2,6 +2,9 @@ const toss = () => Math.floor(Math.random() * 2);
 
 const tossNum = 3; // トス回数
 
+const userName = prompt("Who are you?\n> ");
+console.log(`Hello, ${userName}!`);
+
 console.log("Tossing a coin...");
 
 let tails = 0;
