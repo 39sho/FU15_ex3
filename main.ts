@@ -16,4 +16,4 @@ for (const i of Array(tossNum).keys()) {
 
 const heads = tossNum - tails;
 console.log(`Heads: ${heads}, Tails: ${tails}`);
-console.log(heads > tails ? "You won!" : "You lost.");
+console.log(heads > tails ? `${userName} won!` : `${userName} lost.`);
